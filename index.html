@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coração na Área</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero-card" id="hero-card">
+      <p class="hero-tag">Quiz interativo • ensino medio • futebol + biologia</p>
+      <h1>Coração na Área</h1>
+      <p class="hero-copy">
+        Entre em campo com 7 perguntas sobre sistema cardiovascular. Cada rodada tem 60 segundos,
+        resposta por clique e explicações rápidas para fixar o conteúdo.
+      </p>
+
+      <div class="hero-meta">
+        <div>
+          <span class="meta-label">Modo</span>
+          <strong>Partida relâmpago</strong>
+        </div>
+        <div>
+          <span class="meta-label">Tempo</span>
+          <strong>60 s por pergunta</strong>
+        </div>
+        <div>
+          <span class="meta-label">Rodadas</span>
+          <strong>7 questões</strong>
+        </div>
+      </div>
+
+      <button id="start-button" class="primary-button">Começar jogo</button>
+    </section>
+
+    <section id="category-card" class="category-card hidden">
+      <p class="hero-tag">Escolha a categoria</p>
+      <h2>Qual tema você quer jogar?</h2>
+      <div class="category-grid category-grid--3">
+        <button class="category-button" id="cat-coracao">
+          <span class="cat-icon">❤️</span>
+          <strong>Coração na Área</strong>
+          <span class="cat-desc">Sistema Cardiovascular</span>
+        </button>
+        <button class="category-button" id="cat-futebol">
+          <span class="cat-icon">⚽</span>
+          <strong>Futebol</strong>
+          <span class="cat-desc">Regras, história e curiosidades</span>
+        </button>
+        <button class="category-button" id="cat-informatica">
+          <span class="cat-icon">💻</span>
+          <strong>Concurso Público</strong>
+          <span class="cat-desc">Informática</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="game-card" class="game-card hidden" aria-live="polite">
+      <header class="game-topbar">
+        <div>
+          <p class="mini-label">Placar</p>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <p class="mini-label">Pergunta</p>
+          <strong id="progress">1/7</strong>
+        </div>
+        <div class="timer-box">
+          <p class="mini-label">Cronômetro</p>
+          <strong id="timer">60</strong>
+        </div>
+        <div class="vidas-box">
+          <p class="mini-label">Vidas</p>
+          <strong id="vidas">❤️❤️❤️</strong>
+        </div>
+      </header>
+
+      <div class="question-board">
+        <p id="theme-line" class="theme-line"></p>
+        <h2 id="question-text"></h2>
+        <div id="answers" class="answers-grid"></div>
+      </div>
+
+      <div id="feedback" class="feedback-panel hidden">
+        <strong id="feedback-title"></strong>
+        <p id="feedback-text"></p>
+        <button id="next-button" class="secondary-button">Próxima pergunta</button>
+      </div>
+    </section>
+
+    <section id="result-card" class="result-card hidden">
+      <p id="result-tag" class="hero-tag">Fim da partida</p>
+      <h2 id="result-title"></h2>
+      <p id="result-summary"></p>
+      <button id="restart-button" class="primary-button">Jogar de novo</button>
+    </section>
+  </main>
+
+  <audio id="bg-music" src="u_9i0vmohuwc-latidos-de-corazon-236173.mp3" loop preload="auto"></audio>
+  <audio id="bg-music-2" src="cryptionax-sonic-boom-314707.mp3" loop preload="auto"></audio>
+
+  <button id="music-toggle" title="Música">🔊</button>
+
+  <script src="jogo.js"></script>
+</body>
+</html>
