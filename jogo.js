@@ -111,6 +111,62 @@ const categorias = {
       }
     ]
   },
+  ensinomedio: {
+    nome: "Ensino Médio",
+    descricao: "Múltiplas disciplinas",
+    icone: "📚",
+    perguntas: [
+      {
+        tema: "Matemática — Nível médio",
+        pergunta: "Qual é o valor de x na equação 2x + 6 = 18?",
+        alternativas: ["4", "5", "6", "7"],
+        correta: 2,
+        explicacao: "Isolando x: 2x = 18 − 6 = 12, portanto x = 6. Equações de 1º grau são a base da álgebra do Ensino Médio."
+      },
+      {
+        tema: "Português — Nível médio",
+        pergunta: "Identifique a oração subordinada adverbial causal em: 'Ficou em casa porque estava doente.'",
+        alternativas: ["'Ficou em casa'.", "'porque estava doente'.", "A oração não tem subordinada adverbial.", "'estava doente' apenas."],
+        correta: 1,
+        explicacao: "A conjunção 'porque' introduz uma oração adverbial causal, indicando a causa do fato expresso na oração principal."
+      },
+      {
+        tema: "História — Nível médio",
+        pergunta: "Qual evento marcou o início da Primeira Guerra Mundial em 1914?",
+        alternativas: ["A Revolução Russa", "A invasão da Polônia pela Alemanha", "O assassinato do arquiduque Francisco Fernando", "A queda da Bolsa de Nova Iorque"],
+        correta: 2,
+        explicacao: "O assassinato do arquiduque Francisco Fernando, herdeiro austro-húngaro, em Sarajevo, serviu de estopim para a Primeira Guerra Mundial."
+      },
+      {
+        tema: "Química — Nível médio-difícil",
+        pergunta: "No balanceamento da reação Fe + O₂ → Fe₂O₃, quantas moléculas de O₂ são necessárias?",
+        alternativas: ["1", "2", "3", "4"],
+        correta: 2,
+        explicacao: "A reação balanceada é 4 Fe + 3 O₂ → 2 Fe₂O₃. São necessárias 3 moléculas de O₂ para cada 4 átomos de Fe."
+      },
+      {
+        tema: "Física — Nível médio-difícil",
+        pergunta: "Um objeto com massa de 5 kg é acelerado a 4 m/s². Qual a força resultante aplicada sobre ele?",
+        alternativas: ["9 N", "1,25 N", "20 N", "0,8 N"],
+        correta: 2,
+        explicacao: "Pela 2ª Lei de Newton: F = m × a = 5 × 4 = 20 N. A unidade de força no SI é o Newton (N)."
+      },
+      {
+        tema: "Biologia — Nível difícil",
+        pergunta: "Na meiose II, o que ocorre com as cromátides-irmãs?",
+        alternativas: ["Sofrem crossing-over e trocam segmentos", "Separam-se, indo para células-filhas distintas", "Fundem-se formando um único cromossomo", "Duplicam-se novamente antes da divisão"],
+        correta: 1,
+        explicacao: "Na meiose II, as cromátides-irmãs se separam (como na mitose), resultando em 4 células haploides geneticamente distintas."
+      },
+      {
+        tema: "Matemática — Nível difícil",
+        pergunta: "Se log₂(x) = 5, qual é o valor de x?",
+        alternativas: ["10", "25", "32", "64"],
+        correta: 2,
+        explicacao: "log₂(x) = 5 significa 2⁵ = x. Portanto x = 32. Logaritmos são amplamente cobrados no ENEM e vestibulares."
+      }
+    ]
+  },
   informatica: {
     nome: "Concurso Público",
     descricao: "Informática",
@@ -190,6 +246,23 @@ musicToggle.addEventListener("click", () => {
     musicaAtiva = true;
     musicToggle.textContent = "🔊";
   }
+});
+
+// --- Modo escuro ---
+const darkToggle = document.getElementById("dark-toggle");
+const aplicarModoEscuro = (ativo) => {
+  document.body.classList.toggle("dark-mode", ativo);
+  darkToggle.textContent = ativo ? "☀️" : "🌙";
+  darkToggle.title = ativo ? "Modo claro" : "Modo escuro";
+};
+
+const modoEscuroSalvo = localStorage.getItem("modoEscuro") === "true";
+aplicarModoEscuro(modoEscuroSalvo);
+
+darkToggle.addEventListener("click", () => {
+  const ativo = !document.body.classList.contains("dark-mode");
+  aplicarModoEscuro(ativo);
+  localStorage.setItem("modoEscuro", ativo);
 });
 
 const startButton = document.getElementById("start-button");
@@ -524,3 +597,4 @@ nextButton.addEventListener("click", avancarPergunta);
 document.getElementById("cat-coracao").addEventListener("click", () => escolherCategoria("coracao"));
 document.getElementById("cat-futebol").addEventListener("click", () => escolherCategoria("futebol"));
 document.getElementById("cat-informatica").addEventListener("click", () => escolherCategoria("informatica"));
+document.getElementById("cat-ensinomedio").addEventListener("click", () => escolherCategoria("ensinomedio"));
