@@ -1,8 +1,8 @@
 const categorias = {
   coracao: {
-    nome: "Medicona e Odonto",
-    descricao: "Sistema Cardiovascular",
-    icone: "❤️",
+    nome: "Medicina e Odonto",
+    descricao: "Cardiovascular, Clínica e Odontologia",
+    icone: "🏥",
     perguntas: [
       {
         tema: "Aquecimento: componentes do sistema",
@@ -353,6 +353,62 @@ const categorias = {
         alternativas: ["Potássio", "Magnésio", "Sódio", "Cálcio"],
         correta: 2,
         explicacao: "O excesso de sódio (sal) favorece a retenção de líquidos e aumenta a pressão arterial, sendo um importante fator de risco para hipertensão."
+      },
+      {
+        tema: "Odontologia: anatomia dental",
+        pergunta: "Qual é o tecido mais duro do corpo humano, que recobre a coroa dos dentes?",
+        alternativas: ["Dentina", "Cemento", "Esmalte", "Polpa"],
+        correta: 2,
+        explicacao: "O esmalte dental é o tecido mais duro do organismo. Ele recobre a coroa do dente e o protege contra o desgaste mecânico e ácidos produzidos pelas bactérias."
+      },
+      {
+        tema: "Odontologia: cárie dentária",
+        pergunta: "Qual é o principal agente causador da cárie dental?",
+        alternativas: ["Vírus herpes simples", "Bactéria Streptococcus mutans", "Fungo Candida albicans", "Bactéria Staphylococcus aureus"],
+        correta: 1,
+        explicacao: "O Streptococcus mutans é a bactéria mais associada à cárie. Ela fermenta açúcares e produz ácidos que desmineralizam o esmalte dental."
+      },
+      {
+        tema: "Odontologia: periodontia",
+        pergunta: "O que é a doença periodontal (periodontite)?",
+        alternativas: ["Infecção viral que afeta a polpa dentária", "Inflamação e destruição dos tecidos de suporte do dente, incluindo osso alveolar", "Desgaste do esmalte por atrito", "Escurecimento dos dentes por pigmentos alimentares"],
+        correta: 1,
+        explicacao: "A periodontite é uma doença inflamatória crônica causada por bactérias que destroem a gengiva, o ligamento periodontal e o osso alveolar, podendo levar à perda dentária."
+      },
+      {
+        tema: "Odontologia: dentição",
+        pergunta: "Quantos dentes permanentes tem um adulto com dentição completa (incluindo os sisos)?",
+        alternativas: ["28", "30", "32", "36"],
+        correta: 2,
+        explicacao: "A dentição permanente completa é formada por 32 dentes: 8 incisivos, 4 caninos, 8 pré-molares e 12 molares (incluindo os 4 sisos ou terceiros molares)."
+      },
+      {
+        tema: "Odontologia: saúde bucal e sistêmica",
+        pergunta: "Qual das alternativas descreve corretamente a relação entre saúde bucal e doenças cardiovasculares?",
+        alternativas: ["Não existe qualquer relação entre saúde bucal e doenças cardíacas", "Bactérias da periodontite podem cair na corrente sanguínea e aumentar o risco de endocardite e aterosclerose", "A cárie dental causa diretamente infarto do miocárdio", "Doenças cardíacas protegem contra infecções bucais"],
+        correta: 1,
+        explicacao: "Bactérias periodontais podem entrar na corrente sanguínea (bacteremia) e contribuir para inflamação sistêmica, endocardite infecciosa e aterosclerose, evidenciando a conexão entre saúde bucal e cardiovascular."
+      },
+      {
+        tema: "Odontologia: fluoreto",
+        pergunta: "Qual é o principal mecanismo de ação do flúor na prevenção da cárie dental?",
+        alternativas: ["Elimina todas as bactérias da boca", "Aumenta a dureza do esmalte incorporando-se à sua estrutura, tornando-o mais resistente aos ácidos", "Branqueia os dentes quimicamente", "Substitui o esmalte danificado por um novo tecido"],
+        correta: 1,
+        explicacao: "O flúor se incorpora à estrutura cristalina do esmalte formando fluorapatita, que é mais resistente à dissolução ácida causada pelas bactérias cariogênicas."
+      },
+      {
+        tema: "Medicina: farmacologia básica",
+        pergunta: "Qual classe de medicamentos é usada para reduzir a pressão arterial ao bloquear a ação da angiotensina II?",
+        alternativas: ["Betabloqueadores", "Bloqueadores dos canais de cálcio", "Inibidores da ECA / Bloqueadores dos receptores AT1 (BRA)", "Anti-inflamatórios não esteroidais (AINEs)"],
+        correta: 2,
+        explicacao: "Os inibidores da ECA (como enalapril) e os BRA (como losartana) atuam no sistema renina-angiotensina-aldosterona, reduzindo a pressão arterial e protegendo órgãos-alvo."
+      },
+      {
+        tema: "Medicina: semiologia",
+        pergunta: "O que avalia a ausculta cardíaca com estetoscópio?",
+        alternativas: ["O volume de sangue nos vasos periféricos", "Os sons produzidos pelo fechamento das valvas cardíacas e possíveis sopros", "A frequência respiratória do paciente", "A quantidade de oxigênio no sangue arterial"],
+        correta: 1,
+        explicacao: "A ausculta cardíaca identifica as bulhas cardíacas (B1 e B2), geradas pelo fechamento das valvas, e detecta sopros, arritmias e outras alterações que podem indicar doenças valvares ou congênitas."
       }
     ]
   },
@@ -740,8 +796,8 @@ const categorias = {
         explicacao: "O assassinato do arquiduque Francisco Fernando, herdeiro austro-húngaro, em Sarajevo, serviu de estopim para a Primeira Guerra Mundial."
       },
       {
-        tema: "Química — Nível médio-difícil",
-        pergunta: "No balanceamento da reação Fe + O₂ → Fe₂O₃, quantas moléculas de O₂ são necessárias?",
+        tema: "Química — Nível médio",
+        pergunta: "A reação entre ferro e oxigênio já balanceada é: 4Fe + 3O₂ → 2Fe₂O₃. Quantas moléculas de O₂ aparecem nessa equação balanceada?",
         alternativas: ["1", "2", "3", "4"],
         correta: 2,
         explicacao: "A reação balanceada é 4 Fe + 3 O₂ → 2 Fe₂O₃. São necessárias 3 moléculas de O₂ para cada 4 átomos de Fe."
@@ -754,18 +810,18 @@ const categorias = {
         explicacao: "Pela 2ª Lei de Newton: F = m × a = 5 × 4 = 20 N. A unidade de força no SI é o Newton (N)."
       },
       {
-        tema: "Biologia — Nível difícil",
-        pergunta: "Na meiose II, o que ocorre com as cromátides-irmãs?",
-        alternativas: ["Sofrem crossing-over e trocam segmentos", "Separam-se, indo para células-filhas distintas", "Fundem-se formando um único cromossomo", "Duplicam-se novamente antes da divisão"],
-        correta: 1,
-        explicacao: "Na meiose II, as cromátides-irmãs se separam (como na mitose), resultando em 4 células haploides geneticamente distintas."
+        tema: "Biologia — Nível médio",
+        pergunta: "A meiose é o tipo de divisão celular que forma os gametas. Quantas células-filhas haploides ela produz ao final?",
+        alternativas: ["1 célula diploide", "2 células diploides", "4 células haploides", "8 células diploides"],
+        correta: 2,
+        explicacao: "A meiose passa por duas divisões (meiose I e II) e produz 4 células-filhas haploides, ou seja, com metade dos cromossomos da célula original. Essas células se tornam gametas (espermatozoides ou óvulos)."
       },
       {
-        tema: "Matemática — Nível difícil",
-        pergunta: "Se log₂(x) = 5, qual é o valor de x?",
-        alternativas: ["10", "25", "32", "64"],
-        correta: 2,
-        explicacao: "log₂(x) = 5 significa 2⁵ = x. Portanto x = 32. Logaritmos são amplamente cobrados no ENEM e vestibulares."
+        tema: "Matemática — Nível médio",
+        pergunta: "Qual é o valor de x na equação 2ˣ = 16?",
+        alternativas: ["2", "4", "6", "8"],
+        correta: 1,
+        explicacao: "2ˣ = 16 → 2⁴ = 16, portanto x = 4. Isso equivale a dizer que o logaritmo de 16 na base 2 é igual a 4, conceito muito cobrado no ENEM e vestibulares."
       },
       {
         tema: "Matemática — Nível médio",
@@ -1426,11 +1482,124 @@ const categorias = {
         explicacao: "O endereço MAC (Media Access Control) é um identificador único de 48 bits gravado pelo fabricante na placa de rede. É usado na camada de enlace para comunicação em redes locais."
       }
     ]
+  },
+  legislacaoti: {
+    nome: "Legislação de TI",
+    descricao: "Leis e normas da informática",
+    icone: "⚖️",
+    perguntas: [
+      {
+        tema: "Legislação de TI — LGPD",
+        pergunta: "A Lei Geral de Proteção de Dados (LGPD) — Lei nº 13.709/2018 — tem como principal objetivo:",
+        alternativas: ["Regular o comércio eletrônico no Brasil", "Proteger os direitos fundamentais de liberdade e privacidade dos titulares de dados pessoais", "Estabelecer normas para o uso de softwares em órgãos públicos", "Definir penalidades para hackers e crimes cibernéticos"],
+        correta: 1,
+        explicacao: "A LGPD regula o tratamento de dados pessoais por pessoas físicas e jurídicas, garantindo direitos como acesso, correção e exclusão dos dados pelo titular."
+      },
+      {
+        tema: "Legislação de TI — LGPD",
+        pergunta: "Segundo a LGPD, o que é um 'dado pessoal sensível'?",
+        alternativas: ["Qualquer informação que identifique uma empresa", "Dados sobre origem racial, saúde, biometria, opinião política, entre outros que podem gerar discriminação", "Dados financeiros de pessoas jurídicas", "Informações de tráfego de rede de computadores"],
+        correta: 1,
+        explicacao: "A LGPD define dados sensíveis como aqueles que podem causar discriminação, como origem racial, religião, saúde, dado genético/biométrico, vida sexual e opinião política."
+      },
+      {
+        tema: "Legislação de TI — LGPD",
+        pergunta: "Qual órgão é responsável por fiscalizar e aplicar a LGPD no Brasil?",
+        alternativas: ["Ministério da Justiça", "Autoridade Nacional de Proteção de Dados (ANPD)", "Tribunal Superior Eleitoral (TSE)", "Agência Nacional de Telecomunicações (Anatel)"],
+        correta: 1,
+        explicacao: "A ANPD é o órgão federal responsável por zelar pela proteção dos dados pessoais, editar normas e fiscalizar o cumprimento da LGPD no Brasil."
+      },
+      {
+        tema: "Legislação de TI — Marco Civil da Internet",
+        pergunta: "O Marco Civil da Internet (Lei nº 12.965/2014) estabelece como princípio fundamental:",
+        alternativas: ["A gratuidade de todas as conexões de internet no Brasil", "A neutralidade da rede, garantindo tratamento igualitário dos pacotes de dados", "A obrigatoriedade de uso de VPN por provedores", "A responsabilidade do usuário por todo conteúdo publicado"],
+        correta: 1,
+        explicacao: "A neutralidade de rede é um dos pilares do Marco Civil: os provedores não podem discriminar pacotes de dados por origem, destino, serviço ou aplicação."
+      },
+      {
+        tema: "Legislação de TI — Marco Civil da Internet",
+        pergunta: "Segundo o Marco Civil da Internet, por quanto tempo os provedores de conexão devem guardar os registros de conexão dos usuários?",
+        alternativas: ["30 dias", "6 meses", "1 ano", "5 anos"],
+        correta: 2,
+        explicacao: "O Marco Civil determina que os provedores de conexão à internet devem manter os registros de conexão pelo prazo de 1 (um) ano, sob sigilo e ordem judicial para acesso."
+      },
+      {
+        tema: "Legislação de TI — Lei de Crimes Cibernéticos",
+        pergunta: "A Lei Carolina Dieckmann (Lei nº 12.737/2012) tipifica como crime:",
+        alternativas: ["O uso não autorizado de redes Wi-Fi públicas", "A invasão de dispositivos informáticos alheios para obter, adulterar ou destruir dados sem autorização", "A revenda de softwares sem nota fiscal", "O download de músicas para uso pessoal"],
+        correta: 1,
+        explicacao: "A Lei 12.737/2012 inseriu no Código Penal o crime de invasão de dispositivo informático. A pena é de 3 meses a 1 ano de detenção, aumentada se o agente obtiver conteúdo privado."
+      },
+      {
+        tema: "Legislação de TI — Crimes Cibernéticos",
+        pergunta: "O crime de estelionato eletrônico, como phishing e clonagem de cartão via internet, é punido com base em qual legislação?",
+        alternativas: ["Apenas pela LGPD", "Pelo Código Penal Brasileiro, com agravantes da Lei 14.155/2021", "Pelo Marco Civil da Internet exclusivamente", "Pela lei de propriedade intelectual"],
+        correta: 1,
+        explicacao: "A Lei 14.155/2021 aumentou as penas do estelionato quando praticado por meios eletrônicos ou informáticos, tornando o crime hediondo na forma qualificada."
+      },
+      {
+        tema: "Legislação de TI — Propriedade Intelectual",
+        pergunta: "A Lei de Software (Lei nº 9.609/1998) protege os programas de computador por quanto tempo?",
+        alternativas: ["10 anos a partir da criação", "50 anos a partir do dia 1º de janeiro do ano seguinte à publicação", "70 anos contados da morte do autor", "Indefinidamente, enquanto o software estiver em uso"],
+        correta: 1,
+        explicacao: "A Lei 9.609/1998 prevê proteção dos programas de computador por 50 anos, contados a partir de 1º de janeiro do ano subsequente à sua publicação ou criação."
+      },
+      {
+        tema: "Legislação de TI — Propriedade Intelectual",
+        pergunta: "O que caracteriza um software de código aberto (open source)?",
+        alternativas: ["O software é sempre gratuito e sem restrições de uso comercial", "O código-fonte é disponibilizado publicamente, permitindo uso, modificação e distribuição conforme a licença", "O software não possui proteção legal alguma", "Apenas empresas públicas podem usar software open source"],
+        correta: 1,
+        explicacao: "Software open source tem o código-fonte aberto e acessível. Cada licença (GPL, MIT, Apache etc.) define as permissões de uso, modificação e redistribuição."
+      },
+      {
+        tema: "Legislação de TI — Governo Eletrônico",
+        pergunta: "O Decreto nº 10.278/2020 estabelece normas sobre:",
+        alternativas: ["O uso de inteligência artificial no setor público", "A digitalização de documentos físicos para produção de documentos digitais com validade legal", "A obrigatoriedade de uso de sistemas de código aberto nos órgãos federais", "A proteção de dados de funcionários públicos"],
+        correta: 1,
+        explicacao: "O Decreto 10.278/2020 define os requisitos técnicos e os procedimentos para digitalizar documentos físicos, conferindo aos documentos digitalizados a mesma validade jurídica do original."
+      },
+      {
+        tema: "Legislação de TI — Assinatura Digital",
+        pergunta: "A Infraestrutura de Chaves Públicas Brasileira (ICP-Brasil) é regulamentada por qual medida legal?",
+        alternativas: ["Lei nº 9.609/1998 (Lei de Software)", "Medida Provisória nº 2.200-2/2001", "Lei nº 12.965/2014 (Marco Civil)", "Decreto nº 7.845/2012"],
+        correta: 1,
+        explicacao: "A MP 2.200-2/2001 instituiu a ICP-Brasil, que garante autenticidade, integridade e validade jurídica de documentos eletrônicos e transações digitais por meio de certificados digitais."
+      },
+      {
+        tema: "Legislação de TI — LGPD",
+        pergunta: "Na LGPD, quem é o 'controlador'?",
+        alternativas: ["A pessoa cujos dados são coletados", "A pessoa ou empresa que decide como e por que os dados pessoais são tratados", "O governo responsável por fiscalizar o uso dos dados", "O profissional que opera os sistemas de TI"],
+        correta: 1,
+        explicacao: "O controlador é a pessoa natural ou jurídica que toma as decisões sobre o tratamento dos dados pessoais. O operador é quem executa o tratamento em nome do controlador."
+      },
+      {
+        tema: "Legislação de TI — LGPD",
+        pergunta: "Qual das alternativas é uma base legal prevista pela LGPD para o tratamento de dados pessoais?",
+        alternativas: ["Interesse exclusivo do controlador", "Consentimento do titular", "Autorização tácita pelo uso do serviço", "Qualquer finalidade comercial legítima"],
+        correta: 1,
+        explicacao: "A LGPD elenca 10 bases legais para o tratamento de dados, sendo o consentimento do titular a mais conhecida. O consentimento deve ser livre, informado e inequívoco."
+      },
+      {
+        tema: "Legislação de TI — Crimes Cibernéticos",
+        pergunta: "Qual crime é configurado quando alguém intercepta comunicações telemáticas sem autorização judicial?",
+        alternativas: ["Invasão de dispositivo informático (Lei 12.737/2012)", "Interceptação ilegal de comunicações (Lei 9.296/1996)", "Estelionato eletrônico (Lei 14.155/2021)", "Violação de direitos autorais (Lei 9.610/1998)"],
+        correta: 1,
+        explicacao: "A Lei 9.296/1996 regulamenta a interceptação de comunicações telefônicas e telemáticas. Realizá-la sem autorização judicial é crime com pena de 2 a 4 anos de reclusão."
+      },
+      {
+        tema: "Legislação de TI — Governo Digital",
+        pergunta: "A Lei do Governo Digital (Lei nº 14.129/2021) tem como objetivo principal:",
+        alternativas: ["Obrigar todos os cidadãos a usarem serviços públicos exclusivamente online", "Estabelecer princípios e instrumentos para a transformação digital do governo e a oferta de serviços públicos digitais", "Criminalizar o uso de serviços públicos presenciais", "Criar o certificado digital obrigatório para todos os brasileiros"],
+        correta: 1,
+        explicacao: "A Lei 14.129/2021 dispõe sobre os princípios, regras e instrumentos para o Governo Digital e a eficiência pública, promovendo serviços digitais e transparência."
+      }
+    ]
   }
 };
 
 let perguntasAtuais = [];
 let categoriaAtual = null;
+let quantidadePorJogo = 7;
 
 // --- Música de fundo ---
 const bgMusic = document.getElementById("bg-music");
@@ -1474,6 +1643,7 @@ const restartButton = document.getElementById("restart-button");
 const nextButton = document.getElementById("next-button");
 const heroCard = document.getElementById("hero-card");
 const categoryCard = document.getElementById("category-card");
+const quantityCard = document.getElementById("quantity-card");
 const gameCard = document.getElementById("game-card");
 const resultCard = document.getElementById("result-card");
 const scoreElement = document.getElementById("score");
@@ -1565,6 +1735,7 @@ function tocarSom(tipo) {
 function mostrarSelecaoCategoria() {
   heroCard.classList.add("hidden");
   categoryCard.classList.remove("hidden");
+  quantityCard.classList.add("hidden");
   gameCard.classList.add("hidden");
   resultCard.classList.add("hidden");
 }
@@ -1580,11 +1751,18 @@ function embaralhar(array) {
 
 function escolherCategoria(chave) {
   categoriaAtual = categorias[chave];
+  categoryCard.classList.add("hidden");
+  quantityCard.classList.remove("hidden");
+}
 
-  const PERGUNTAS_POR_JOGO = 7;
+function confirmarQuantidade(quantidade) {
+  quantidadePorJogo = quantidade;
+
+  const disponivel = categoriaAtual.perguntas.length;
+  const total = Math.min(quantidadePorJogo, disponivel);
 
   perguntasAtuais = embaralhar(categoriaAtual.perguntas)
-    .slice(0, PERGUNTAS_POR_JOGO)
+    .slice(0, total)
     .map((p) => {
       const respostaCorreta = p.alternativas[p.correta];
       const alternativasEmbaralhadas = embaralhar(p.alternativas);
@@ -1595,7 +1773,7 @@ function escolherCategoria(chave) {
       };
     });
 
-  categoryCard.classList.add("hidden");
+  quantityCard.classList.add("hidden");
   iniciarJogo();
 }
 
@@ -1827,4 +2005,14 @@ document.getElementById("cat-informatica").addEventListener("click", () => {
 
 document.getElementById("cat-ensinomedio").addEventListener("click", () => {
   escolherCategoria("ensinomedio");
+});
+
+document.getElementById("cat-legislacaoti").addEventListener("click", () => {
+  escolherCategoria("legislacaoti");
+});
+
+document.querySelectorAll(".quantity-button").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    confirmarQuantidade(Number(btn.dataset.qty));
+  });
 });

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coração na Área 3.0</title>
+  <title>Coração na Área 4.0</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
@@ -13,9 +13,9 @@
   <main class="app-shell">
     <section class="hero-card" id="hero-card">
       <p class="hero-tag">Quiz interativo • ensino medio • futebol + biologia</p>
-      <h1>Coração na Área 3.0</h1>
+      <h1>Coração na Área 4.0</h1>
       <p class="hero-copy">
-        Entre em campo com 7 perguntas sobre sistema cardiovascular. Cada rodada tem 60 segundos,
+        Entre em campo com 7 perguntas sobre medicina, sistema cardiovascular e odontologia. Cada rodada tem 60 segundos,
         resposta por clique e explicações rápidas para fixar o conteúdo.
       </p>
 
@@ -40,11 +40,11 @@
     <section id="category-card" class="category-card hidden">
       <p class="hero-tag">Escolha a categoria</p>
       <h2>Qual tema você quer jogar?</h2>
-      <div class="category-grid category-grid--4">
+      <div class="category-grid category-grid--3">
         <button class="category-button" id="cat-coracao">
-          <span class="cat-icon">❤️</span>
-          <strong>Medicona e Odonto</strong>
-          <span class="cat-desc">Sistema Cardiovascular</span>
+          <span class="cat-icon">🏥</span>
+          <strong>Medicina e Odonto</strong>
+          <span class="cat-desc">Cardiovascular, Clínica e Odontologia</span>
         </button>
         <button class="category-button" id="cat-futebol">
           <span class="cat-icon">⚽</span>
@@ -60,6 +60,39 @@
           <span class="cat-icon">📚</span>
           <strong>Ensino Médio</strong>
           <span class="cat-desc">Múltiplas disciplinas</span>
+        </button>
+        <button class="category-button" id="cat-legislacaoti">
+          <span class="cat-icon">⚖️</span>
+          <strong>Legislação de TI</strong>
+          <span class="cat-desc">Leis e normas da informática</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="quantity-card" class="category-card hidden">
+      <p class="hero-tag">Modo de jogo</p>
+      <h2>Quantas perguntas?</h2>
+      <p class="quantity-subtitle">As perguntas são sorteadas aleatoriamente a cada rodada.</p>
+      <div class="quantity-grid">
+        <button class="quantity-button" data-qty="7">
+          <span class="qty-number">7</span>
+          <span class="qty-label">Partida rápida</span>
+        </button>
+        <button class="quantity-button" data-qty="10">
+          <span class="qty-number">10</span>
+          <span class="qty-label">Clássico</span>
+        </button>
+        <button class="quantity-button" data-qty="15">
+          <span class="qty-number">15</span>
+          <span class="qty-label">Desafio</span>
+        </button>
+        <button class="quantity-button" data-qty="20">
+          <span class="qty-number">20</span>
+          <span class="qty-label">Maratona</span>
+        </button>
+        <button class="quantity-button" data-qty="50">
+          <span class="qty-number">50</span>
+          <span class="qty-label">Modo extremo</span>
         </button>
       </div>
     </section>
