@@ -41,10 +41,10 @@ const categorias = {
       },
       {
         tema: "Fôlego de jogador: coronárias",
-        pergunta: "O fluxo coronariano aumenta em qual momento do ciclo cardíaco?",
+        pergunta: "Em que fase do ciclo cardíaco o fluxo coronariano do ventrículo esquerdo é maior?",
         alternativas: ["Durante o relaxamento ventricular", "Durante uma febre", "Durante a contração dos átrios apenas", "Somente quando a pessoa corre"],
         correta: 0,
-        explicacao: "O fluxo coronariano aumenta no relaxamento ventricular. Nesse momento, o próprio coração recebe melhor irrigação."
+        explicacao: "No ventrículo esquerdo, o fluxo coronariano é maior na diástole (relaxamento ventricular), quando a compressão dos vasos coronários pelo miocárdio diminui."
       },
       {
         tema: "Finalização: aplicação no futebol",
@@ -153,10 +153,10 @@ const categorias = {
       },
       {
         tema: "Sangue e composição",
-        pergunta: "Qual tipo sanguíneo é considerado o doador universal de sangue total?",
+        pergunta: "Qual tipo sanguíneo é considerado doador universal de concentrado de hemácias?",
         alternativas: ["A+", "B-", "O-", "AB+"],
         correta: 2,
-        explicacao: "O tipo O- (O negativo) é o doador universal porque não possui antígenos A, B nem o fator Rh, reduzindo o risco de rejeição em transfusões."
+        explicacao: "O tipo O- (O negativo) é considerado doador universal para concentrado de hemácias porque não apresenta antígenos A, B nem Rh(D) na superfície das hemácias, reduzindo o risco de reação transfusional."
       },
       {
         tema: "Sangue e composição",
@@ -385,7 +385,7 @@ const categorias = {
       {
         tema: "Odontologia: saúde bucal e sistêmica",
         pergunta: "Qual das alternativas descreve corretamente a relação entre saúde bucal e doenças cardiovasculares?",
-        alternativas: ["Não existe qualquer relação entre saúde bucal e doenças cardíacas", "Bactérias da periodontite podem cair na corrente sanguínea e aumentar o risco de endocardite e aterosclerose", "A cárie dental causa diretamente infarto do miocárdio", "Doenças cardíacas protegem contra infecções bucais"],
+        alternativas: ["Não existe qualquer relação entre saúde bucal e doenças cardíacas", "Bactérias da periodontite podem entrar na corrente sanguínea e aumentar o risco de endocardite e aterosclerose", "A cárie dental causa diretamente infarto do miocárdio", "Doenças cardíacas protegem contra infecções bucais"],
         correta: 1,
         explicacao: "Bactérias periodontais podem entrar na corrente sanguínea (bacteremia) e contribuir para inflamação sistêmica, endocardite infecciosa e aterosclerose, evidenciando a conexão entre saúde bucal e cardiovascular."
       },
@@ -398,10 +398,10 @@ const categorias = {
       },
       {
         tema: "Medicina: farmacologia básica",
-        pergunta: "Qual classe de medicamentos é usada para reduzir a pressão arterial ao bloquear a ação da angiotensina II?",
-        alternativas: ["Betabloqueadores", "Bloqueadores dos canais de cálcio", "Inibidores da ECA / Bloqueadores dos receptores AT1 (BRA)", "Anti-inflamatórios não esteroidais (AINEs)"],
+        pergunta: "Qual classe de medicamentos reduz a pressão arterial ao bloquear diretamente os receptores da angiotensina II (AT1)?",
+        alternativas: ["Betabloqueadores", "Bloqueadores dos canais de cálcio", "Bloqueadores dos receptores de angiotensina II (BRA)", "Anti-inflamatórios não esteroidais (AINEs)"],
         correta: 2,
-        explicacao: "Os inibidores da ECA (como enalapril) e os BRA (como losartana) atuam no sistema renina-angiotensina-aldosterona, reduzindo a pressão arterial e protegendo órgãos-alvo."
+        explicacao: "Os BRA (como a losartana) bloqueiam os receptores AT1 da angiotensina II, reduzindo vasoconstrição e secreção de aldosterona. Com isso, ajudam no controle da pressão arterial e na proteção de órgãos-alvo."
       },
       {
         tema: "Medicina: semiologia",
@@ -483,9 +483,9 @@ const categorias = {
       {
         tema: "Regras do jogo",
         pergunta: "O que caracteriza a posição de impedimento no futebol?",
-        alternativas: ["O atacante estar atrás da bola no momento do passe", "O atacante estar mais próximo da linha de fundo do que o último defensor no momento do passe", "O atacante tocar a bola com a mão", "O atacante estar dentro da área adversária"],
+        alternativas: ["O atacante estar atrás da bola no momento do passe", "O atacante estar mais próximo da linha de fundo adversária do que a bola e o penúltimo defensor no momento do passe", "O atacante tocar a bola com a mão", "O atacante estar dentro da área adversária"],
         correta: 1,
-        explicacao: "O impedimento ocorre quando o atacante está à frente do último defensor (exceto o goleiro) no momento em que o passe é feito por um companheiro."
+        explicacao: "Em regra, há impedimento quando o jogador está à frente da bola e do penúltimo defensor no momento do passe, no campo adversário, e participa da jogada."
       },
       {
         tema: "Copa do Mundo",
@@ -741,17 +741,17 @@ const categorias = {
       },
       {
         tema: "Lendas do futebol",
-        pergunta: "Qual clube europeu é o maior vencedor da UEFA Champions League?",
-        alternativas: ["Real Madrid", "Barcelona", "Bayern de Munique", "Juventus"],
-        correta: 0,
-        explicacao: "O Real Madrid é o clube com mais títulos da Champions League/Copa dos Campeões da Europa, com recordes de conquistas consecutivas ao longo das décadas."
+        pergunta: "Qual seleção venceu a primeira Copa do Mundo de futebol, em 1930?",
+        alternativas: ["Brasil", "Argentina", "Itália", "Uruguai"],
+        correta: 3,
+        explicacao: "A primeira Copa do Mundo foi realizada no Uruguai, e a própria seleção uruguaia foi campeã ao derrotar a Argentina na final."
       },
       {
         tema: "Regras do jogo",
-        pergunta: "Quantas substituições são permitidas a cada equipe em uma partida oficial da FIFA atualmente?",
-        alternativas: ["3", "4", "5", "6"],
+        pergunta: "Qual é a duração do intervalo entre o primeiro e o segundo tempo em uma partida oficial?",
+        alternativas: ["10 minutos", "12 minutos", "15 minutos", "20 minutos"],
         correta: 2,
-        explicacao: "Desde 2020, a FIFA adotou permanentemente a regra de até 5 substituições por equipe em competições oficiais."
+        explicacao: "Pelas Regras do Jogo, o intervalo do jogo tem duração máxima de 15 minutos, salvo regra específica da competição."
       },
       {
         tema: "Curiosidades",
@@ -1084,7 +1084,7 @@ const categorias = {
       },
       {
         tema: "Geografia — Países",
-        pergunta: "Qual é o país com maior população do mundo atualmente?",
+        pergunta: "Desde 2023, qual país é o mais populoso do mundo?",
         alternativas: ["China", "Índia", "Estados Unidos", "Indonésia"],
         correta: 1,
         explicacao: "A Índia superou a China em 2023, tornando-se o país mais populoso do mundo, com mais de 1,4 bilhão de habitantes."
@@ -1168,10 +1168,10 @@ const categorias = {
       },
       {
         tema: "Concurso Público - Informática: armazenamento",
-        pergunta: "Qual unidade de medida representa 1024 megabytes (MB)?",
+        pergunta: "Em convenções binárias usadas em muitas provas, 1024 megabytes (MB) correspondem a:",
         alternativas: ["1 Kilobyte (KB)", "1 Terabyte (TB)", "1 Gigabyte (GB)", "1 Petabyte (PB)"],
         correta: 2,
-        explicacao: "1 Gigabyte equivale a 1024 Megabytes. Essa hierarquia de unidades (KB, MB, GB, TB) é recorrente em questões de concurso."
+        explicacao: "No uso tradicional de concursos e materiais didáticos, 1 GB costuma ser tratado como 1024 MB. Em padrão estrito IEC, 1024 MiB correspondem a 1 GiB."
       },
       {
         tema: "Concurso Público - Informática: navegadores",
@@ -1469,10 +1469,10 @@ const categorias = {
       },
       {
         tema: "Concurso Público - Informática: formatos de arquivo",
-        pergunta: "O que significa a sigla PDF?",
-        alternativas: ["Program Data File", "Personal Document Format", "Portable Document Format", "Processed Data File"],
-        correta: 2,
-        explicacao: "PDF (Portable Document Format) é um formato criado pela Adobe que preserva a formatação do documento independentemente do sistema ou software usado para abri-lo."
+        pergunta: "Qual formato é mais usado para arquivos compactados no Windows e em transferências de arquivos?",
+        alternativas: [".zip", ".mp3", ".pptx", ".html"],
+        correta: 0,
+        explicacao: "O formato .zip é amplamente usado para compactar e agrupar arquivos, reduzindo tamanho e facilitando envio e armazenamento."
       },
       {
         tema: "Concurso Público - Informática: redes",
@@ -1535,7 +1535,7 @@ const categorias = {
         pergunta: "O crime de estelionato eletrônico, como phishing e clonagem de cartão via internet, é punido com base em qual legislação?",
         alternativas: ["Apenas pela LGPD", "Pelo Código Penal Brasileiro, com agravantes da Lei 14.155/2021", "Pelo Marco Civil da Internet exclusivamente", "Pela lei de propriedade intelectual"],
         correta: 1,
-        explicacao: "A Lei 14.155/2021 aumentou as penas do estelionato quando praticado por meios eletrônicos ou informáticos, tornando o crime hediondo na forma qualificada."
+        explicacao: "A Lei 14.155/2021 alterou o Código Penal para qualificar e aumentar penas em fraudes eletrônicas, como estelionato por meio digital."
       },
       {
         tema: "Legislação de TI — Propriedade Intelectual",
